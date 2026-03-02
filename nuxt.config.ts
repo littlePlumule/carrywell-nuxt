@@ -6,9 +6,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/scss/style.scss'],
   modules: ['@nuxt/icon', '@nuxtjs/google-fonts'],
-  alias: {
-    images: fileURLToPath(new URL('./app/assets/images', import.meta.url)),
-  },
   googleFonts: {
     families: {
       Inter: [400, 500, 600, 700],

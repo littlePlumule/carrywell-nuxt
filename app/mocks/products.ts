@@ -1,37 +1,37 @@
 import type { Product } from '~/types/products'
 
-import shortWalletImage from '~images/shortWalletImage.png'
-import shortWalletImage_grey from '~images/shortWalletImage_grey.png'
+import shortWalletImage from '~/assets/images/shortWalletImage.png'
+import shortWalletImage_grey from '~/assets/images/shortWalletImage_grey.png'
 
-import femaleLongWalletImage from '~images/femaleLongWalletImage.png'
-import femaleLongWalletImage_offwhite from '~images/femaleLongWalletImage_offwhite.png'
-import femaleLongWalletImage_wine_red from '~images/femaleLongWalletImage_wine_red.png'
+import femaleLongWalletImage from '~/assets/images/femaleLongWalletImage.png'
+import femaleLongWalletImage_offwhite from '~/assets/images/femaleLongWalletImage_offwhite.png'
+import femaleLongWalletImage_wine_red from '~/assets/images/femaleLongWalletImage_wine_red.png'
 
-import classicShortWalletImage_black from '~images/classicShortWalletImage_black.png'
-import classicShortWalletImage_coffee from '~images/classicShortWalletImage_coffee.png'
-import classicShortWalletImage_dark_blue from '~images/classicShortWalletImage_dark_blue.png'
+import classicShortWalletImage_black from '~/assets/images/classicShortWalletImage_black.png'
+import classicShortWalletImage_coffee from '~/assets/images/classicShortWalletImage_coffee.png'
+import classicShortWalletImage_dark_blue from '~/assets/images/classicShortWalletImage_dark_blue.png'
 
-import casualShortWalletImage_grey from '~images/casualShortWalletImage_grey.png'
-import casualShortWalletImage_army_green from '~images/casualShortWalletImage_army_green.png'
-import casualShortWalletImage_orange from '~images/casualShortWalletImage_orange.png'
+import casualShortWalletImage_grey from '~/assets/images/casualShortWalletImage_grey.png'
+import casualShortWalletImage_army_green from '~/assets/images/casualShortWalletImage_army_green.png'
+import casualShortWalletImage_orange from '~/assets/images/casualShortWalletImage_orange.png'
 
-import colorBlockShortWalletImage_blue from '~images/colorBlockShortWalletImage_blue.png'
-import colorBlockShortWalletImage_red_black from '~images/colorBlockShortWalletImage_red_black.png'
-import colorBlockShortWalletImage_yellow_grey from '~images/colorBlockShortWalletImage_yellow_grey.png'
+import colorBlockShortWalletImage_blue from '~/assets/images/colorBlockShortWalletImage_blue.png'
+import colorBlockShortWalletImage_red_black from '~/assets/images/colorBlockShortWalletImage_red_black.png'
+import colorBlockShortWalletImage_yellow_grey from '~/assets/images/colorBlockShortWalletImage_yellow_grey.png'
 
-import urbanMidWalletImage_dark_grey from '~images/urbanMidWalletImage_dark_grey.png'
-import urbanMidWalletImage_brown from '~images/urbanMidWalletImage_brown.png'
+import urbanMidWalletImage_dark_grey from '~/assets/images/urbanMidWalletImage_dark_grey.png'
+import urbanMidWalletImage_brown from '~/assets/images/urbanMidWalletImage_brown.png'
 
-import miniCoinPurseImage_red from '~images/miniCoinPurseImage_red.png'
-import miniCoinPurseImage_blue from '~images/miniCoinPurseImage_blue.png'
-import miniCoinPurseImage_yellow from '~images/miniCoinPurseImage_yellow.png'
+import miniCoinPurseImage_red from '~/assets/images/miniCoinPurseImage_red.png'
+import miniCoinPurseImage_blue from '~/assets/images/miniCoinPurseImage_blue.png'
+import miniCoinPurseImage_yellow from '~/assets/images/miniCoinPurseImage_yellow.png'
 
-import businessLongWalletImage_black from '~images/businessLongWalletImage_black.png'
-import businessLongWalletImage_dark_brown from '~images/businessLongWalletImage_dark_brown.png'
+import businessLongWalletImage_black from '~/assets/images/businessLongWalletImage_black.png'
+import businessLongWalletImage_dark_brown from '~/assets/images/businessLongWalletImage_dark_brown.png'
 
-import simpleCoinPurseImage_blue from '~images/simpleCoinPurseImage_blue.png'
-import simpleCoinPurseImage_beige from '~images/simpleCoinPurseImage_beige.png'
-import simpleCoinPurseImage_green from '~images/simpleCoinPurseImage_green.png'
+import simpleCoinPurseImage_blue from '~/assets/images/simpleCoinPurseImage_blue.png'
+import simpleCoinPurseImage_beige from '~/assets/images/simpleCoinPurseImage_beige.png'
+import simpleCoinPurseImage_green from '~/assets/images/simpleCoinPurseImage_green.png'
 
 export const products: Product[] = [
   {
