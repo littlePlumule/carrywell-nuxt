@@ -1,0 +1,88 @@
+.form {
+  width: 100%;
+
+  &__headline {
+    margin: 40px 0;
+    color: var(--regal-blue);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+
+    &:last-of-type {
+      margin-bottom: -20px;
+    }
+  }
+
+  &__container > &__wrap {
+    flex-grow: 1;
+  }
+
+  &__wrap {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__wrap-border {
+    margin-bottom: 20px;
+    border: 1px solid var(--regal-blue);
+    padding: 8px;
+    display: block;
+    color: var(--regal-blue);
+    cursor: pointer;
+  }
+
+  &__title {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    transition: 0.5s;
+    color: var(--regal-blue);
+    cursor: text;
+  }
+
+  &__input {
+    width: 100%;
+    border: unset;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--regal-blue);
+    outline: unset;
+    color: var(--regal-blue);
+    font-size: var(--xs);
+    background-color: transparent;
+  }
+
+  &__input:focus ~ &__title,
+  &__input.not-empty ~ &__title {
+    top: -20px;
+    font-size: 12px;
+    color: var(--picton-blue);
+  }
+
+  &__error {
+    display: block;
+    color: var(--burgundy);
+    font-size: 12px;
+    visibility: hidden;
+    height: 24px;
+  }
+
+  &__forget-password {
+    display: block;
+    width: fit-content;
+    color: var(--picton-blue);
+    margin-bottom: 20px;
+  }
+
+  &__submit {
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+}

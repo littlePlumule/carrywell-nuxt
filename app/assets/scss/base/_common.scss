@@ -1,0 +1,60 @@
+* ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--white-smoke);
+}
+
+* ::-webkit-scrollbar {
+  width: 6px;
+}
+
+* ::-webkit-scrollbar-thumb {
+  background-color: var(--regal-blue);
+}
+
+.debug * {
+  outline: 1px solid #f00;
+}
+
+html * {
+  font-family: var(--shippori-mincho), var(--noto-serif-tc), serif;
+}
+
+body {
+  background: var(--white-smoke) url('~/assets/images/leather2.png') repeat
+    center;
+}
+
+main,
+.main {
+  min-height: calc(100vh - 68px - 94px - 15.625vw - var(--xxl) - var(--xxl));
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: unset;
+  padding: unset;
+  cursor: pointer;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+iconify-icon {
+  vertical-align: bottom;
+}

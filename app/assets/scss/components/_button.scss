@@ -1,0 +1,23 @@
+.primary-button {
+  background-color: var(--dark-wood);
+  color: var(--white);
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--old-copper);
+  }
+}
+
+.secondary-button {
+  color: var(--dark-wood);
+  border: 1px solid var(--dark-wood);
+  background-color: var(--white);
+  transition:
+    color 0.3s,
+    background-color 0.3s;
+
+  &:hover {
+    background-color: var(--sandal);
+    color: var(--white);
+  }
+}
