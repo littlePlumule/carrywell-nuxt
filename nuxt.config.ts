@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/scss/style.scss'],
-  modules: ['@nuxt/icon', '@nuxtjs/google-fonts'],
+  modules: ['@nuxt/icon', '@nuxtjs/google-fonts', '@vee-validate/nuxt'],
   googleFonts: {
     families: {
       Inter: [400, 500, 600, 700],
