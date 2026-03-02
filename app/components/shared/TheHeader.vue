@@ -47,6 +47,14 @@
             }"
           >
             <NuxtLink class="main-header__icon-link" :to="iconItem.path">
+              <ClientOnly>
+                <span
+                  v-if="iconItem.quantity && iconItem.quantity > 0"
+                  class="main-header__icon-quantity"
+                >
+                  {{ iconItem.quantity }}
+                </span>
+              </ClientOnly>
               <TheIcon
                 :name="iconItem.iconName"
                 class="main-header__icon hl4"
@@ -61,8 +69,12 @@
 
 <script setup lang="ts">
 import TheIcon from './TheIcon.vue'
+import { useCart } from '~/composables/useCart'
+import { useFavorite } from '~/composables/useFavorite'
 
 const route = useRoute()
+const { totalItem } = useCart()
+const { favoriteCount } = useFavorite()
 
 const navItem = [
   { label: '首頁', path: '/' },
@@ -70,15 +82,16 @@ const navItem = [
   { label: '品牌介紹', path: '/about' },
 ]
 
-const personNavItem = [
+const personNavItem = computed(() => [
   {
     iconName: 'favoriteOutline',
     path: '/favorite',
     name: '收藏',
+    quantity: favoriteCount.value,
   },
-  { iconName: 'bag', path: '/cart', name: '購物車' },
+  { iconName: 'bag', path: '/cart', name: '購物車', quantity: totalItem.value },
   { iconName: 'profile', path: '/login', name: '會員' },
-]
+])
 
 function isActive(path: string) {
   if (path === '/product') {
