@@ -1,6 +1,6 @@
 import { products } from '~/mocks/products'
-import type { Product } from '~/types/products'
-import type { SortOption } from '~/constants/sort'
+import type { Product } from '~/types/product'
+import type { SortOption } from '~/constant/sort'
 
 type FilterFn = (product: Product) => boolean
 

@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { LayoutType } from './constants/layouts'
+import { LayoutType } from './constant/layouts'
 </script>
 
 <style lang="scss">

@@ -1,4 +1,4 @@
-import type { Product } from '~/types/products'
+import type { Product } from '~/types/product'
 
 import shortWalletImage from '~/assets/images/shortWalletImage.png'
 import shortWalletImage_grey from '~/assets/images/shortWalletImage_grey.png'

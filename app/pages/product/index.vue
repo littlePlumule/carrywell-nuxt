@@ -1,9 +1,6 @@
-<template>
-  <h2>product</h2>
-</template>
-
-<script setup lang="ts">
+<script setup>
 definePageMeta({
-  bannerTitle: 'Product',
+  redirect: '/product/hot',
+  middleware: ['category'],
 })
 </script>
