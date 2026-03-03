@@ -2,7 +2,7 @@
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ['~/assets/scss/style.scss'],
   modules: ['@nuxt/icon', '@nuxtjs/google-fonts', '@vee-validate/nuxt'],
   googleFonts: {
