@@ -24,9 +24,9 @@
         </div>
       </TheBanner>
       <div :class="{ 'product-container container': showSidebar }">
-        <aside v-if="showSidebar" class="sidebar-wrapper" ref="sidebarEl">
+        <div v-if="showSidebar" class="sidebar-wrapper" ref="sidebarEl">
           <ProductSidebar />
-        </aside>
+        </div>
         <slot />
       </div>
     </main>
@@ -112,6 +112,11 @@ onMounted(async () => {
   margin-block: var(--xxl);
   position: relative;
   gap: 20px;
+}
+
+.sidebar-wrapper {
+  flex: 1;
+  flex-basis: 200px;
 }
 
 @media screen and (max-width: 768px) {
