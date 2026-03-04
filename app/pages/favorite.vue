@@ -1,5 +1,5 @@
 <template>
-  <ClientOnly>
+  <div class="favorite-page">
     <main v-if="products.length > 0" class="favorite-container container">
       <section class="product">
         <ProductHeader
@@ -23,7 +23,7 @@
       link="/product"
       link-name="Shop Now"
     />
-  </ClientOnly>
+  </div>
 </template>
 
 <script setup lang="ts">

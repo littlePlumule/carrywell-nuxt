@@ -11,17 +11,15 @@
           class="card__image"
           loading="lazy"
         />
-        <ClientOnly>
-          <button
-            :class="[
-              'card__favorite',
-              { 'card__favorite--active': isFavorite(product.id) },
-            ]"
-            @click.prevent.stop="toggleFavorite(product.id)"
-          >
-            <TheIcon name="favorite" class="card__favorite-icon hl5" />
-          </button>
-        </ClientOnly>
+        <button
+          :class="[
+            'card__favorite',
+            { 'card__favorite--active': isFavorite(product.id) },
+          ]"
+          @click.prevent.stop="toggleFavorite(product.id)"
+        >
+          <TheIcon name="favorite" class="card__favorite-icon hl5" />
+        </button>
       </figure>
     </NuxtLink>
     <div class="card__description">

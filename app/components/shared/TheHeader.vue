@@ -47,14 +47,12 @@
             }"
           >
             <NuxtLink class="main-header__icon-link" :to="iconItem.path">
-              <ClientOnly>
-                <span
-                  v-if="iconItem.quantity && iconItem.quantity > 0"
-                  class="main-header__icon-quantity"
-                >
-                  {{ iconItem.quantity }}
-                </span>
-              </ClientOnly>
+              <span
+                v-if="iconItem.quantity && iconItem.quantity > 0"
+                class="main-header__icon-quantity"
+              >
+                {{ iconItem.quantity }}
+              </span>
               <TheIcon
                 :name="iconItem.iconName"
                 class="main-header__icon hl4"

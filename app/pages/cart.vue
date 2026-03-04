@@ -1,5 +1,5 @@
 <template>
-  <ClientOnly>
+  <div class="cart-page">
     <main v-if="cartItems.length > 0" class="cart container">
       <CartStep :step="1" />
 
@@ -88,7 +88,7 @@
       link="/product"
       link-name="Shop Now"
     />
-  </ClientOnly>
+  </div>
 </template>
 
 <script setup lang="ts">
