@@ -16,4 +16,10 @@ export default defineNuxtConfig({
     display: 'swap',
     preload: true,
   },
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in',
+    },
+  },
 })

@@ -101,6 +101,19 @@ import { useFavorite } from '~/composables/useFavorite'
 
 definePageMeta({
   middleware: ['category'],
+  pageTransition: {
+    name: 'wallet-fade',
+    mode: 'out-in',
+    css: false,
+    onEnter: (el, done) => {
+      const { pageIn } = useAnimations()
+      pageIn(el, done)
+    },
+    onLeave: (el, done) => {
+      const { pageOut } = useAnimations()
+      pageOut(el, done)
+    },
+  },
 })
 
 const {
