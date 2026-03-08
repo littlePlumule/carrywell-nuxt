@@ -30,23 +30,13 @@
 import ProductHeader from '~/components/product/ProductHeader.vue'
 import TheCard from '~/components/shared/TheCard.vue'
 import TheEmpty from '~/components/shared/TheEmpty.vue'
-import { LayoutType } from '~/constant/layouts'
-import { useFavorite } from '~/composables/useFavorite'
-import { useProducts } from '~/composables/useProduct'
-import type { Product } from '~/types/product'
+import { useFavoriteProducts } from '~/composables/useFavoriteProducts'
 
 definePageMeta({
   bannerTitle: 'Favorite',
-  layout: LayoutType.Default,
 })
 
-const { favoriteIds } = useFavorite()
-
-const favoriteFilter = computed(() => {
-  return (product: Product) => favoriteIds.value.includes(product.id)
-})
-
-const { products, sortMethod } = useProducts(16, 16, favoriteFilter)
+const { products, sortMethod } = useFavoriteProducts()
 </script>
 
 <style lang="scss" scoped>
