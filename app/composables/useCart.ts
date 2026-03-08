@@ -3,6 +3,8 @@ import type { Product } from '~/types/product'
 import { useStorage } from './useStorage'
 
 const CART_KEY = 'cartItems'
+const FREE_SHIPPING_THRESHOLD = 1000
+const SHIPPING_FEE = 70
 
 export function useCart() {
   const cartItems = useStorage<CartItem[]>(CART_KEY, [])
@@ -60,6 +62,12 @@ export function useCart() {
     ),
   )
 
+  const shippingFee = computed(() =>
+    totalPrice.value >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE,
+  )
+
+  const totalAmount = computed(() => totalPrice.value + shippingFee.value)
+
   return {
     cartItems,
     addToCart,
@@ -69,5 +77,7 @@ export function useCart() {
     decreaseQuantity,
     totalItem,
     totalPrice,
+    shippingFee,
+    totalAmount,
   }
 }
